@@ -1,0 +1,125 @@
+﻿@model TestSeaExpress_WEB.MyUser
+
+
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">x</button>
+
+                <label class="modal-title" id="myModalLabel">Форма редактирования</label>
+                @*<h4 class="modal-title" id="myModalLabel">Редактирование пользователя</h4>*@
+            </div>
+            <form action="/User/Save" method="post">
+                @using (Html.BeginForm("Save", "User", FormMethod.Post))
+                {
+                    <div class="modal-body">
+                        
+
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+
+                            @Html.ValidationSummary()    
+                            @Html.HiddenFor(model => model.UserID)
+                            
+                            @Html.HiddenFor(model => model.isNew)
+
+
+                            <div class="form-group">
+                                <table>
+                                    <tr>
+                                        <td>
+                                           @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-10", @value = "@Model.FirstName" })
+                                            <span style="color:red" >
+                                                *
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="form-group">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <span>
+                                                @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-10", @value = "@Model.LastName" })
+                                            </span>
+                                            <span style="color:red" >
+                                                *
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="form-group">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <span>
+                                                @Html.LabelFor(model => model.MiddleName, htmlAttributes: new { @class = "control-label col-md-10", @value = "@Model.MiddleName" })
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.MiddleName, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.MiddleName, "", new { @class = "text-danger" })
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="form-group">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <span>
+                                                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-10", @value = "@Model.Email" })
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+
+                        <button class="btn btn-primary" type="submit">Сохранить изменения</button>
+
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+</div>

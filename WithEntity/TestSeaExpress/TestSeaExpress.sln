@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSeaExpress_WCF", "TestSeaExpress_WCF\TestSeaExpress_WCF.csproj", "{EDCD2781-8670-4B22-A2DD-16459050B757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSeaExpress_WEB", "TestSeaExpress_WEB\TestSeaExpress_WEB.csproj", "{58CE0623-3511-4842-82ED-FD5C6BA97876}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDCD2781-8670-4B22-A2DD-16459050B757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCD2781-8670-4B22-A2DD-16459050B757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCD2781-8670-4B22-A2DD-16459050B757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCD2781-8670-4B22-A2DD-16459050B757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58CE0623-3511-4842-82ED-FD5C6BA97876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58CE0623-3511-4842-82ED-FD5C6BA97876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58CE0623-3511-4842-82ED-FD5C6BA97876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58CE0623-3511-4842-82ED-FD5C6BA97876}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

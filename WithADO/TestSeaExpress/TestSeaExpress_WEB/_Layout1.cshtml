@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+@using System.Web.Optimization
+<html>
+    <head>
+        <title>@Page.Title</title>
+        @RenderSection("head", required: false)
+        <link rel="stylesheet" href="~/Content/bootstrap.css" />
+        <link rel="stylesheet" href="~/Content/StyleSheet1.css" />
+        <script src="~/Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"> </script>
+        
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+
+
+    </head>
+    <body>
+        @RenderBody()
+    </body>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</html>

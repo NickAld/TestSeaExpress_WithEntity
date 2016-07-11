@@ -1,0 +1,5 @@
+D:\My\Projects\TestSeaExpress1\TestSeaExpress\DataBase\bin\Debug\DataBase.dll
+D:\My\Projects\TestSeaExpress1\TestSeaExpress\DataBase\bin\Debug\DataBase.pdb
+D:\My\Projects\TestSeaExpress1\TestSeaExpress\DataBase\obj\Debug\DataBase.dll
+D:\My\Projects\TestSeaExpress1\TestSeaExpress\DataBase\obj\Debug\DataBase.pdb
+D:\My\Projects\TestSeaExpress1\TestSeaExpress\DataBase\obj\Debug\DataBase.csprojResolveAssemblyReference.cache
